@@ -1,9 +1,9 @@
 import json
 import jwt
 from datetime import datetime, timedelta
+from unittest.mock  import patch, MagicMock
 
 from django.test    import TestCase, Client
-from unittest.mock  import patch, MagicMock
 
 from user.models    import User, ShippingInformation
 from product.models import Product, Size, ProductSize, Image

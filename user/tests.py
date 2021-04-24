@@ -2,9 +2,9 @@ import json
 import jwt
 import bcrypt
 from datetime import datetime
+from unittest.mock import patch, MagicMock
 
 from django.test   import TestCase, Client
-from unittest.mock import patch, MagicMock
 
 from user.models    import User, ShippingInformation, Portfolio
 from product.models import Product, Size, ProductSize, Image
